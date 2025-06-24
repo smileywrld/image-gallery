@@ -3,11 +3,291 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Image Gallery</title>
+		<title>CSS Grid - Photo Gallery</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>Image Gallery</h1>
-		<script src="script.js"></script>
+		<aside class="sidebar">
+			<div class="logo">&#8734;</div>
+		</aside>
+
+		<main class="main">
+			<h1>CSS Grid - Photo Gallery</h1>
+
+			<div class="gallery">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1727378752948-d19180ff12e2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Green forest landscape"
+					/>
+					<figcaption>
+						<h3>Peaceful Forest</h3>
+						<p>A serene view of a lush green forest bathed in sunlight.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://plus.unsplash.com/premium_photo-1661908853318-893732a14e42?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="City skyline at night"
+					/>
+					<figcaption>
+						<h3>City Lights</h3>
+						<p>
+							The skyline glows under the night sky in this bustling metropolis.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1414521203994-7efc0bc37d65?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Sunset over beach"
+					/>
+					<figcaption>
+						<h3>Golden Sunset</h3>
+						<p>A tranquil beach scene as the sun dips below the horizon.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://plus.unsplash.com/premium_photo-1673283780222-8a7b3366e0ab?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Snowy mountains"
+					/>
+					<figcaption>
+						<h3>Snowy Peaks</h3>
+						<p>Majestic snow-covered mountains under a clear blue sky.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://plus.unsplash.com/premium_photo-1681149342564-8bebc9cc4d16?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Desert dunes"
+					/>
+					<figcaption>
+						<h3>Desert Dunes</h3>
+						<p>
+							Endless golden sand dunes rolling through the desert landscape.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1624562432368-57fd3fd48da1?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Cup of coffee"
+					/>
+					<figcaption>
+						<h3>Morning Brew</h3>
+						<p>A fresh cup of coffee to start the day just right.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1551662044-1e9df93fc903?q=80&w=932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Colorful flowers in bloom"
+					/>
+					<figcaption>
+						<h3>Spring Blossoms</h3>
+						<p>Vibrant flowers in full bloom signaling the start of spring.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1480499484268-a85a2414da81?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Lake with reflections"
+					/>
+					<figcaption>
+						<h3>Mirror Lake</h3>
+						<p>
+							The calm waters of a lake reflecting the surrounding trees and
+							sky.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1510852151262-05bfbfbe996d?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Modern laptop"
+					/>
+					<figcaption>
+						<h3>Workstation</h3>
+						<p>
+							A minimalist desk setup featuring a sleek laptop and accessories.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1744112795483-008fd5db05dd?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TGlicmFyeSUyMExvdmV8ZW58MHx8MHx8fDA%3D"
+						alt="Books on shelves"
+					/>
+					<figcaption>
+						<h3>Library Love</h3>
+						<p>Rows of colorful books neatly organized on wooden shelves.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1681567604770-0dc826c870ae?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Freshly baked pizza"
+					/>
+					<figcaption>
+						<h3>Delicious Pizza</h3>
+						<p>A mouthwatering pizza loaded with cheese and toppings.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://plus.unsplash.com/premium_photo-1661341402276-16ffc7c54155?q=80&w=905&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Bicycle on road"
+					/>
+					<figcaption>
+						<h3>Ride Free</h3>
+						<p>A scenic route perfect for a peaceful bike ride.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1527377844612-ae9febb890c0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Cloudy sky"
+					/>
+					<figcaption>
+						<h3>Cloud Watching</h3>
+						<p>Fluffy white clouds scattered across a vibrant blue sky.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://plus.unsplash.com/premium_photo-1661371243525-d02768a7feee?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Person coding"
+					/>
+					<figcaption>
+						<h3>In the Code</h3>
+						<p>A programmer focused on writing code on a glowing screen.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Cute cat"
+					/>
+					<figcaption>
+						<h3>Curious Cat</h3>
+						<p>A playful cat peeking with its big bright eyes.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://plus.unsplash.com/premium_photo-1669277330816-b7aba5742ac0?q=80&w=887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Puppy on grass"
+					/>
+					<figcaption>
+						<h3>Best Friend</h3>
+						<p>A playful puppy enjoying the fresh outdoor grass.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Classic car"
+					/>
+					<figcaption>
+						<h3>Timeless Ride</h3>
+						<p>A beautifully restored classic car gleaming under the sun.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1663623567082-8d1a4c3192fb?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Rainy street view"
+					/>
+					<figcaption>
+						<h3>Rainy Days</h3>
+						<p>Raindrops falling gently on a quiet city street.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1717639698293-ca0fa5496e4a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Airplane in sky"
+					/>
+					<figcaption>
+						<h3>Sky High</h3>
+						<p>An airplane soaring through the clouds on a long journey.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1488866022504-f2584929ca5f?q=80&w=862&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Night sky with stars"
+					/>
+					<figcaption>
+						<h3>Stargazing</h3>
+						<p>The night sky lit up by countless twinkling stars.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1717639698293-ca0fa5496e4a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Airplane in sky"
+					/>
+					<figcaption>
+						<h3>Sky High</h3>
+						<p>An airplane soaring through the clouds on a long journey.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1681567604770-0dc826c870ae?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Freshly baked pizza"
+					/>
+					<figcaption>
+						<h3>Delicious Pizza</h3>
+						<p>A mouthwatering pizza loaded with cheese and toppings.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://plus.unsplash.com/premium_photo-1661341402276-16ffc7c54155?q=80&w=905&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Bicycle on road"
+					/>
+					<figcaption>
+						<h3>Ride Free</h3>
+						<p>A scenic route perfect for a peaceful bike ride.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1527377844612-ae9febb890c0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Cloudy sky"
+					/>
+					<figcaption>
+						<h3>Cloud Watching</h3>
+						<p>Fluffy white clouds scattered across a vibrant blue sky.</p>
+					</figcaption>
+				</figure>
+			</div>
+		</main>
 	</body>
 </html>
