@@ -1,6 +1,12 @@
-const imageSrc = document.getElementById("image").src;
-console.log(imageSrc);
+const link = document.getElementById("image");
 
-let downloadBtn = document.getElementById("download");
+link.addEventListener("click", downloadImage);
 
-downloadBtn = imageSrc;
+function downloadImage() {
+	const imageSrc = document.getElementById("image").src;
+	console.log(imageSrc);
+
+	let downloadBtn = document.getElementById("download").href;
+
+	downloadBtn = imageSrc;
+}
